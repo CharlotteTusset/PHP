@@ -1,0 +1,32 @@
+# PHP - BECODE.org
+___
+
+## Exercices sur PHP
+
+Lien vers le repo des [consignes](https://github.com/becodeorg/Johnson2/tree/master/06-PHP).
+
+## Table des matières
+
+(Voir onglet [Exercices](https://github.com/CharlotteTusset/PHP/tree/master/Exercices))
+
+_Temps 1 : Parcours permettant de maîtriser la syntaxe PHP_
+
+1. Introduction
+2. Variables
+3. Conditions
+4. Quizz: PHP / intro + variables
+5. Drill: Exercices sur les Conditions
+6. Tableaux (array)
+7. Boucles
+8. Fonctions
+
+Exercices pratiques une fois ces étapes du parcours effectuées, utilisons ces nouveaux acquis dans des exercices concrets, inspirés de situations réelles. 
+* Voir *[multipage-php-website](https://github.com/CharlotteTusset/multipage-website-in-php)* réalisé en binôme. 
+
+_Temps 2 : parcours 07 - SQL/DB_
+
+* SQL: PHP-PDO [excercice](https://github.com/CharlotteTusset/PHP/tree/master/Exercices/SQL.%20php-pdo)  
+
+___
+
+
