@@ -14,7 +14,7 @@ $req = $bdd->query('SELECT * FROM hiking');
 echo "
 <h1>Hiking - Reunion Island</h1>
 <table border='1'>
-<caption>5 hikings in Reunion Island</caption>
+<caption>Several hikings in Reunion Island</caption>
 <tr>
 <th>id</th>
 <th>name</th>
@@ -42,3 +42,17 @@ $req->closeCursor();
 
 
 ?>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Randonnées</title>
+    <link rel="stylesheet" href="css/basics.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <h1></h1>
+    <table>
+    </table>
+  </body>
+</html>

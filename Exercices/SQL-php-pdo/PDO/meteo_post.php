@@ -11,7 +11,7 @@ catch(Exception $e)
 }
 
 // Insertion du message à l'aide d'une requête préparée
-$req = $bdd->prepare('INSERT INTO Météo (ville, haut, bas) VALUES(?, ?,?)');
+$req = $bdd->prepare('INSERT INTO Météo (ville, haut, bas) VALUES(?,?,?)');
 $req->execute(array($_POST['ville'], $_POST['haut'], $_POST['bas']));
 
 // Redirection du visiteur vers la page météo
