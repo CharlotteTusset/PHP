@@ -1,12 +1,6 @@
 <?php
 
-try {
-	$bdd = new PDO('mysql:host=localhost;dbname=reunion_island;charset=utf8', 'root', 'rootme', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-}
-
-catch (Exception $e) {
-    die('Erreur : ' . $e->getMessage());
-} 
+include 'connect.php';
 
 // Afficher 
 $req = $bdd->query('SELECT * FROM hiking');
@@ -33,6 +27,7 @@ while ($data = $req->fetch())
 		echo "<td>" . htmlspecialchars($data['distance']) . "</td>";
 		echo "<td>" . htmlspecialchars($data['duration']) . "</td>";
 		echo "<td>" . htmlspecialchars($data['height_difference']) . "</td>";
+		echo "<td>" . "<form action='delete.php' method='post'><input type='number' name='id'><button type='delete' name='delete'>Delete</button></form>" . "</td>" ; 
 	echo "</tr>";
 }
 
@@ -47,7 +42,7 @@ $req->closeCursor();
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Randonnées</title>
+    <title>Hiking - Reunion Island</title>
     <link rel="stylesheet" href="css/basics.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>

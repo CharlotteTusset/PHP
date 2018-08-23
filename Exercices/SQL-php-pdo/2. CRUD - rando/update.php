@@ -1,6 +1,5 @@
 <?php 
 
-// print_r($_POST);
 
 include 'read.php';
 
@@ -8,7 +7,7 @@ include 'connect.php';
 
 
 	// Insert statement
-	$sql = "INSERT INTO hiking (name, difficulty, distance, duration, height_difference) VALUES(:name, :difficulty, :distance, :duration, :height_difference)"; 
+	$sql = "UPDATE hiking SET name= :name, difficulty=:difficulty, distance= :distance, duration= :duration, height_difference= :height_difference WHERE id =:id";
 
 	$stmt = $bdd->prepare($sql);
 
@@ -38,32 +37,27 @@ include 'connect.php';
 
 	// $stmt->execute();
 	if($stmt->execute()) {
-		echo 'Hiking inserted successfully!';
+		echo 'Hiking modified successfully!';
 	}
 
 	$stmt->closeCursor();
 
-
-// Redirection 
-// header('Location: read.php');
-
 ?>
-
 
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<title>Add a hiking</title>
-	<link rel="stylesheet" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="css/basics.css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
-	<a href="read.php">Data list</a>
+	<a href="update.php">Data list</a>
 	<h1>Add</h1>
-	<form action="create.php" method="post">
+	<form action="" method="post">
 		<div>
 			<label for="name">Name</label>
-			<input type="text" name="name" id="name" value="">
+			<input type="text" name="name">
 		</div>
 
 		<div>
@@ -79,15 +73,15 @@ include 'connect.php';
 		
 		<div>
 			<label for="distance">Distance</label>
-			<input type="text" name="distance" value="" id="distance">
+			<input type="text" name="distance">
 		</div>
 		<div>
 			<label for="duration">Duration</label>
-			<input type="time" name="duration" value="" id="duration">
+			<input type="duration" name="duration">
 		</div>
 		<div>
-			<label for="height_difference">Height difference</label>
-			<input type="text" name="height_difference" value="" id="height_difference">
+			<label for="height_difference">Height Difference</label>
+			<input type="text" name="height_difference">
 		</div>
 		<button type="submit" name="button">Submit</button>
 	</form>
