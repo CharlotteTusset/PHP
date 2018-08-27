@@ -28,7 +28,7 @@ _Temps 2 : parcours 07 - SQL/DB_
 * SQL: PHP-PDO [exercice](https://github.com/CharlotteTusset/php/tree/master/Exercices/SQL-php-pdo/PDO)
 1. [Drill d'initiation au SQL](https://github.com/CharlotteTusset/php/tree/master/Exercices/SQL-php-pdo/1.%20Drill%20d'initiation) 
 2. [CRUD - Rando](https://github.com/CharlotteTusset/php/tree/master/Exercices/SQL-php-pdo/2.%20CRUD%20-%20rando)
-3. Authentification 
+3. Authentification: ajouté à 2.CRUD-RANDO
 4. CRUD 1
 5. CRUD 2
 

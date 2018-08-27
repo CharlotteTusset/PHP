@@ -27,11 +27,13 @@ while ($data = $req->fetch())
 		echo "<td>" . htmlspecialchars($data['distance']) . "</td>";
 		echo "<td>" . htmlspecialchars($data['duration']) . "</td>";
 		echo "<td>" . htmlspecialchars($data['height_difference']) . "</td>";
-		echo "<td>" . "<form action='delete.php' method='post'><input type='number' name='id'><button type='delete' name='delete'>Delete</button></form>" . "</td>" ; 
 	echo "</tr>";
 }
 
 echo "</table>";
+
+echo "<br><div>Select your ID" . "<form action='delete.php' method='post'><input type='number' name='id'><button type='delete' name='delete'>Delete</button></form>" . "</div>" ; 
+echo "<div>Select your ID" . "<form action='update.php' method='post'><input type='number' name='id'><button type='update' name='update'>Update</button></form>" . "</div>" ;
 
 $req->closeCursor();
 

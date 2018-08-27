@@ -1,5 +1,12 @@
 <?php 
 
+session_start();
+
+if (isset($_SESSION['connect']) && $_SESSION['connect'] == true) {
+    echo "Welcome to the member's area, " . $_SESSION['username'] . "!";
+} else {
+    echo "Please log in first to see this page.";
+}
 
 include 'read.php';
 
@@ -35,10 +42,10 @@ include 'connect.php';
 
 	// $bdd->exec($sql);
 
-	// $stmt->execute();
-	if($stmt->execute()) {
-		echo 'Hiking modified successfully!';
-	}
+	$stmt->execute();
+	// if($stmt->execute()) {
+	// 	echo 'Hiking modified successfully!';
+	// }
 
 	$stmt->closeCursor();
 
