@@ -29,7 +29,7 @@ _Temps 2 : parcours 07 - SQL/DB_
 1. [Drill d'initiation au SQL](https://github.com/CharlotteTusset/php/tree/master/Exercices/SQL-php-pdo/1.%20Drill%20d'initiation) 
 2. [CRUD - Rando](https://github.com/CharlotteTusset/php/tree/master/Exercices/SQL-php-pdo/2.%20CRUD%20-%20rando)
 3. Authentification: ajouté à 2.CRUD-RANDO
-4. CRUD 1
+4. [CRUD 1](https://github.com/CharlotteTusset/php/tree/master/Exercices/SQL-php-pdo/4.%20CRUD%201)
 5. CRUD 2
 
 ___
